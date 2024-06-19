@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        .feature-card img {
+            max-width: 64px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .feature-card {
+            text-align: center;
+        }
+        .accordion img {
+            max-width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Task Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="task-dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="task-create.html">Create Task</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to the Task Management Application!</h1>
+            <p class="lead">Organize and track your tasks efficiently with our powerful tool.</p>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Task Management Features and Capabilities</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/2544afe1770b2fcf/original/ENT23-web-usesTaskManagement-web-mytasks-icon-1x.svg" class="card-img-top" alt="My Tasks Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">My Tasks</h5>
+                        <p class="card-text">My Tasks is a personalized view of every task that’s assigned to you, regardless of which project it’s in. Visualize all of your to-dos in one place to ensure nothing falls through the cracks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/1924b1bf4b681637/original/ENT23-web-usesProjectManagement-multihome-icon-1x.svg" class="card-img-top" alt="Multi-homing Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Multi-homing</h5>
+                        <p class="card-text">Track and manage tasks across multiple projects. When you make changes to a task in one project, instantly see those changes reflected across all projects in real time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/2f8c8a463c0ca617/original/ENT23-web-usesTaskManagement-web-tasks-icon-1x.svg" class="card-img-top" alt="Time Tracking Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Time Tracking</h5>
+                        <p class="card-text">With native time tracking, quickly estimate expected and actual time spent on tasks. Get better real-time estimates on project progress which is essential for budgeting and forecasting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/7344c608e65c993c/original/ENT23-web-usesTaskManagement-web-workflows-icon-1x.svg" class="card-img-top" alt="Workflows Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Workflows</h5>
+                        <p class="card-text">Workflow Builder is a no-code point-and-click tool to visualize and build powerful automated workflows. Streamline tasks and keep your teammates in sync via integrations with 200+ of your favorite business apps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/7ed06a7d960ac7c1/original/ENT23-web-usesTaskManagement-web-fields-icon-1x.svg" class="card-img-top" alt="Custom Fields Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Fields</h5>
+                        <p class="card-text">Custom fields are the best way to tag, sort, and filter work. Create unique custom fields for any information you need to track—from priority and status to email or phone number.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/73a25865d079752/original/ENT23-web-usesProjectManagement-rules-icon-1x.svg" class="card-img-top" alt="Rules Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Rules</h5>
+                        <p class="card-text">Automate manual work so your team spends less time on busywork and more time on the tasks that matter. Use Rules to automatically assign work, adjust due dates, notify stakeholders, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/773e789ee1a59451/original/ENT23-web-usesProjectManagement-mobile-icon-1x.svg" class="card-img-top" alt="Mobile App Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App</h5>
+                        <p class="card-text">The Asana app is available on Mac, iOS, and Android. Review any new inbox notifications, send messages, and access project tasks so you’re always up to date on project information.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/43ba78486a0ad836/original/ENT23-web-usesTaskManagement-web-templates-icon-1x.svg" class="card-img-top" alt="Custom Templates Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Templates</h5>
+                        <p class="card-text">Custom templates make it easy to duplicate existing workflows or common processes—giving teams confidence that they don’t have to recreate work from scratch or worry about missing any steps.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/transform/2e39789a-1aae-4641-a36f-0c973aeeb7a7/web-whatsnew-projectview?io=transform:fill,width:96&format=webp" class="card-img-top" alt="Project Views Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Views</h5>
+                        <p class="card-text">Project views make it easy for you to see your work, your way. Select between List, Board, Calendar, and Timeline, and toggle between the project views to find a view that works for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/22c524303641ba9c/original/ENT23-web-usesTaskManagement-web-dependency-icon-1x.svg" class="card-img-top" alt="Dependencies Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Dependencies</h5>
+                        <p class="card-text">Mark a task as waiting on another task with dependencies. Teams with collaborative workflows can easily see what tasks they’re waiting on from others, and know when to get started on their portion of work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/6be04e7b9e05d9e/original/ENT23-web-usesTaskManagement-web-timeline-icon-1x.svg" class="card-img-top" alt="Timeline Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Timeline</h5>
+                        <p class="card-text">Timeline View is a Gantt-style project view that displays all your tasks in a horizontal bar chart. With Timeline View, you can easily track how the pieces of your plan fit together.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card">
+                    <img src="https://assets.asana.biz/m/3b0017007a857306/original/ENT23-web-usesTaskManagement-web-calendar-icon-1x.svg" class="card-img-top" alt="Calendar Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Calendar</h5>
+                        <p class="card-text">View any project in Calendar view to see all upcoming and past work in a calendar format. Give stakeholders insight into task due dates, as well as the larger cadence of scheduled project work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Integrations -->
+    <div class="bg-light">
+    <div class="container my-5 p-5">
+        <h2 class="text-center mb-5">Avoid distractions with app integrations</h2>
+        <p class="text-center mb-5">Task Management Application integrates with 200+ of your favorite tools. Centralize your most important work in one tool to reduce app switching and get your most important work done.</p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <img src="https://assets.asana.biz/m/5b7562937b0c5db5/original/logo-app-gmail.svg" alt="Gmail Icon"> Gmail
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Integrate Gmail with Task Management Application to manage tasks directly from your inbox.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <img src="https://assets.asana.biz/m/3ccdfac5d682baec/original/logo-gdrive-40.svg" alt="Google Drive Icon"> Google Drive
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Integrate Google Drive with Task Management Application to manage and attach your files directly from Drive.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <img src="https://assets.asana.biz/m/7467e3cb8f0eb6c0/original/logo-outlook-40.svg" alt="Outlook Icon"> Outlook
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Integrate Outlook with Task Management Application to manage tasks directly from your Outlook inbox and calendar.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <img src="https://assets.asana.biz/m/48de5be0ba70cee/original/logo-app-Office365.svg" alt="Microsoft 365 Icon"> Microsoft 365
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Integrate Microsoft 365 with Task Management Application to enhance your productivity with seamless task management.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <img src="https://assets.asana.biz/m/5ea308988ea55e2/original/logo-dropbox-40.svg" alt="Dropbox Icon"> Dropbox
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Integrate Dropbox with Task Management Application to manage and share your files directly from Dropbox.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        <img src="https://assets.asana.biz/m/30834cf303acca25/original/logo-slack-40.svg" alt="Slack Icon"> Slack
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Integrate Slack with Task Management Application to receive notifications and manage tasks directly from Slack.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center p-3">
+        <p>&copy; 2024 Task Management Application. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
